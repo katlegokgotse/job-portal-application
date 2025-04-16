@@ -1,9 +1,12 @@
 package main
 
 import (
-	"fmt"
+	"github.com/gorilla/mux"
+	"main.go/modules/register"
 )
 
 func main() {
-	fmt.Println("Welcome to the Job Portal Application Backend!")
+	router := *mux.NewRouter()
+	register.RegisterRouter(&router)
+	login.LoginRouter(&router)
 }

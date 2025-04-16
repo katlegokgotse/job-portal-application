@@ -1,9 +1,11 @@
 package login
 
-import "github.com/gorilla/mux"
+import (
+	"net/http"
 
-func main() {
-	router := mux.NewRouter()
-	controller := LoginController()
-	router.HandleFunc("/login", controller)
+	"github.com/gorilla/mux"
+)
+
+func RegisterRouter(router *mux.Router) {
+	router.HandleFunc("/login", LoginController).Methods(http.MethodPost)
 }

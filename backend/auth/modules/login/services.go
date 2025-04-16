@@ -1,5 +1,5 @@
 package login
-
-func loginService() {
+"main.go/models"
+func LoginService(userDetails UserProfile) {
 
 }
