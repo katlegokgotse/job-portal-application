@@ -1,9 +1,11 @@
-package main
-
-import (
-	"fmt"
-)
+package models
 
 type UserProfile struct {
-	empId [int]
+	userId       int
+	firstName    string
+	lastName     string
+	emailAddress string
+	password     string
+	phone        string
+	role         UserRole
 }

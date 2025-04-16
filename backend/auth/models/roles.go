@@ -1,9 +1,6 @@
-package main
+package models
 
-import (
-	"fmt"
-)
-
-func main() {
-	fmt.Println("Welcome to the Job Portal Application Backend!")
+type UserRole struct {
+	roleId   int
+	roleType string
 }

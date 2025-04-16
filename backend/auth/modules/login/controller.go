@@ -1,3 +1,5 @@
-func LoginController(){
-	
+package login
+
+func LoginController() {
+
 }
